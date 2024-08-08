@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem de Acesso à Internet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span>Tópicos Especiais em Computação 2024.1 | Professor: Alexandre Ribeiro Cajazeira Ramos</span>
+        </div>
+        <div class="nav-right">
+            <a href="https://github.com/dayangomes" target="_blank"><img src="img/github.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.linkedin.com/in/dayan-gomes-129087213/" target="_blank"><img src="img/linkedin.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="main-card">
+            <h2>Porcentagem de Acesso à Internet de 2005 à 2011</h2>
+            <h3>Discente: Dayan Ramos Gomes</h3>
+            <p>Os dados apresentados foram retirados da API do IBGE e abrangem os anos de 2005 até 2011.</p>
+        </div>
+    </div>
+    <!-- <div class="main-content">
+        <h1>Porcentagem de Acesso à Internet<br> no 
+            Brasil nos anos de 2005 à 2011
+            <br><br>
+            Dayan Ramos Gomes
+        </h1>
+    </div> -->
+    <div class="section" id="section-overview">
+        <div class="card right white-bg">
+            <h2>Internet</h2>
+            <p>A internet desempenha um papel crucial na sociedade moderna, transformando a maneira como vivemos, trabalhamos, aprendemos e nos comunicamos. Facilita a comunicação instantânea através de e-mails, mensagens instantâneas, videochamadas e redes sociais, revolucionando a educação com acesso a recursos educativos e cursos online. A internet impulsiona a economia global através do comércio eletrônico e serviços financeiros online, fornece uma fonte inesgotável de informação e impacta a saúde com serviços de telemedicina.</p>
+        </div>
+    </div>
+    <div class="section" id="section-2006">
+        <div class="card left">
+            <h2>2006</h2>
+            <p>Em 2006, o estado com maior acesso foi o Distrito Federal com 32.9% e o estado com menor acesso foi o Piauí com 4.4%.</p>
+            <div class="button-container">
+                <button class="btn green" onclick="zoomToState('df')">Estado Maior Acesso</button>
+                <button class="btn red" onclick="zoomToState('pi')">Estado Menor Acesso</button>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-2005">
+        <div class="card left">
+            <h2>2005, 2007 à 2011</h2>
+            <p>Em todos esses anos, o estado com maior acesso foi o Distrito Federal e o estado com menor acesso foi o Maranhão. Em 2005, o Distrito Federal teve a maior porcentagem de 28.6%, enquanto o Maranhão teve a menor porcentagem de 2.1%. Em 2009, o Distrito Federal alcançou sua maior porcentagem de 53.0% e o Maranhão teve sua maior porcentagem de 9.3%.</p>
+            <div class="button-container">
+                <button class="btn green" onclick="zoomToState('df')">Estado Maior Acesso</button>
+                <button class="btn red" onclick="zoomToState('ma')">Estado Menor Acesso</button>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-maiores2011">
+        <div class="card right white-bg">
+            <h2>Maiores acessos no último ano</h2>
+            <p>Os Top 5 Estados com Maior Porcentagem de Acesso à Internet em 2011:</p>
+            <p>1. Distrito Federal: 19.6%</p>
+            <p>2. São Paulo: 16.9%</p>
+            <p>3. Rio de Janeiro: 15.6%</p>
+            <p>4. Santa Catarina: 15.5%</p>
+            <p>5. Paraná: 13.7%</p>
+        </div>
+    </div>
+    <div class="section" id="section-menores2011">
+        <div class="card left white-bg">
+            <h2>Menores acessos no último ano</h2>
+            <p>Os Top 5 Estados com Menor Porcentagem de Acesso à Internet em 2011:</p>
+            <p>1. Maranhão: 3.4%</p>
+            <p>2. Piauí: 3.6%</p>
+            <p>3. Pará: 4.3%</p>
+            <p>4. Alagoas: 5.2%</p>
+            <p>5. Ceará: 5.5%</p>
+        </div>
+    </div>
+    <div class="section" id="section-explanation">
+        <div class="card center white-bg">
+            <h2>Desigualdade de Acesso</h2>
+            <p>Os estados do Norte e Nordeste apresentam valores mais baixos de acesso à internet devido a uma combinação de fatores econômicos, sociais e geográficos. A infraestrutura limitada, menor investimento em tecnologia e educação, além da vasta extensão territorial com áreas rurais de difícil acesso, contribuem para essa disparidade. Programas de inclusão digital e investimentos em infraestrutura são essenciais para reduzir essas desigualdades.</p>
+        </div>
+    </div>
+    <div class="section conclusion-section">
+        <div class="conclusion-card">
+            <h2>Conclusão da Análise</h2>
+            <br><br>
+            <p>A análise da porcentagem de acesso à internet no Brasil entre os anos de 2005 a 2011 revelou importantes insights sobre a distribuição e evolução da conectividade no país. Notamos que o Distrito Federal consistentemente apresentou as maiores porcentagens de acesso, enquanto estados do Norte e Nordeste, como Maranhão e Piauí, enfrentaram maiores desafios.</p>
+            <p>Esses dados ressaltam a importância de políticas públicas focadas na inclusão digital e no desenvolvimento de infraestrutura. Apesar de os dados serem até 2011, essa realidade ainda pode estar presente nos dias atuais. Agradecemos pela leitura e esperamos que esta análise contribua para um melhor entendimento da evolução da internet no Brasil.</p>
+        </div>
+    </div>
+    <!-- Adicione seções para os outros anos conforme necessário -->
+    <div id="map"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
