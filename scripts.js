@@ -136,7 +136,8 @@ const estadosMaioresAcessos2011 = [
     { id: 'pr', geoJsonUrl: 'geojson/parana.geojson' }
 ];
 
-const paletaCoresMaiores = ['#006837', '#31a354', '#78c679', '#c2e699', '#ffffcc'];
+const paletaCoresMaiores = ['#08519c', '#3182bd', '#6baed6', '#bdd7e7', '#eff3ff'];
+
 
 // Função que preenche os estados com maior número de acessos em 2011
 estadosMaioresAcessos2011.forEach((estado, index) => {
