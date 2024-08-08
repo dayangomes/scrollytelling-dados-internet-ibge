@@ -199,3 +199,53 @@ h1 {
 .red {
     background-color: rgb(209, 44, 44);
 }
+
+.color-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.color-df {
+    background-color: #006837; /* Cor para Distrito Federal */
+}
+
+.color-sp {
+    background-color: #31a354; /* Cor para São Paulo */
+}
+
+.color-rj {
+    background-color: #78c679; /* Cor para Rio de Janeiro */
+}
+
+.color-sc {
+    background-color: #c2e699; /* Cor para Santa Catarina */
+}
+
+.color-pr {
+    background-color: #ffffcc; /* Cor para Paraná */
+}
+
+/* Cores para os menores acessos */
+.color-ma {
+    background-color: #bd0026; /* Cor para Maranhão */
+}
+
+.color-pi {
+    background-color: #f03b20; /* Cor para Piauí */
+}
+
+.color-pa {
+    background-color: #fd8d3c; /* Cor para Pará */
+}
+
+.color-al {
+    background-color: #fecc5c; /* Cor para Alagoas */
+}
+
+.color-ce {
+    background-color: #ffffb2; /* Cor para Ceará */
+}
+

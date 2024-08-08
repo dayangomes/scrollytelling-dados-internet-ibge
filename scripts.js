@@ -40,7 +40,7 @@ const addGeoJsonLayer = (map, id, data, color) => {
 };
 
 // Função para adicionar uma camada de preenchimento GeoJSON ao mapa
-const addGeoJsonFillLayer = (map, id, data, color) => {
+const addGeoJsonFillLayer = (map, id, data, color, opacity = 0.9) => {
     if (map.getSource(id)) {
         map.getSource(id).setData(data);
     } else {
@@ -55,7 +55,7 @@ const addGeoJsonFillLayer = (map, id, data, color) => {
             source: id,
             paint: {
                 'fill-color': color,
-                'fill-opacity': 0.5
+                'fill-opacity': opacity
             }
         });
     }
@@ -136,12 +136,14 @@ const estadosMaioresAcessos2011 = [
     { id: 'pr', geoJsonUrl: 'geojson/parana.geojson' }
 ];
 
+const paletaCoresMaiores = ['#006837', '#31a354', '#78c679', '#c2e699', '#ffffcc'];
+
 // Função que preenche os estados com maior número de acessos em 2011
-estadosMaioresAcessos2011.forEach(estado => {
+estadosMaioresAcessos2011.forEach((estado, index) => {
     fetch(estado.geoJsonUrl)
         .then(response => response.json())
         .then(data => {
-            addGeoJsonFillLayer(map, `${estado.id}-fill`, data, '#00FF00');
+            addGeoJsonFillLayer(map, `${estado.id}-fill`, data, paletaCoresMaiores[index], 1);
         });
 });
 
@@ -153,12 +155,14 @@ const estadosMenoresAcessos2011 = [
     { id: 'al', geoJsonUrl: 'geojson/alagoas.geojson' },
     { id: 'ce', geoJsonUrl: 'geojson/ceara.geojson' }
 ];
+
+const paletaCoresMenores = ['#bd0026', '#f03b20', '#fd8d3c', '#fecc5c', '#ffffb2'];
 // Fu
-estadosMenoresAcessos2011.forEach(estado => {
+estadosMenoresAcessos2011.forEach((estado, index) => {
     fetch(estado.geoJsonUrl)
         .then(response => response.json())
         .then(data => {
-            addGeoJsonFillLayer(map, `${estado.id}-fill`, data, '#FF0000'); // Red color
+            addGeoJsonFillLayer(map, `${estado.id}-fill`, data, paletaCoresMenores[index]); // Red color
         });
 });
 
