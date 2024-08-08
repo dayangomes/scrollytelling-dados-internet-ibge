@@ -205,10 +205,22 @@ const tiltMap = (bearing, pitch) => {
 document.querySelectorAll('.section').forEach(section => {
     section.addEventListener('mouseenter', () => {
         const id = section.id.split('-')[1];
-        if (id === 'overview') {
+        if (id === 'main') {
+            map.setLayoutProperty('brasil-border', 'visibility', 'visible');
+            map.setLayoutProperty('df-border', 'visibility', 'none');
+            map.setLayoutProperty('ma-border', 'visibility', 'none');
+            map.setLayoutProperty('pi-border', 'visibility', 'none');
+            estadosMaioresAcessos2011.forEach(estado => {
+                map.setLayoutProperty(`${estado.id}-fill`, 'visibility', 'none');
+            })
+            estadosMenoresAcessos2011.forEach(estado => {
+                map.setLayoutProperty(`${estado.id}-fill`, 'visibility', 'none');
+            });
+            toggleAllStateBorders(false);
+        } else if (id === 'overview') {
             map.easeTo({
-                center: [-50.491477, -13.673179],
-                zoom: 3,
+                center: [-45.491477, -13.673179],
+                zoom: 3.5,
                 bearing: 0,
                 pitch: 0,
                 duration: 2000
@@ -236,7 +248,13 @@ document.querySelectorAll('.section').forEach(section => {
             map.setLayoutProperty('df-border', 'visibility', 'visible');
             map.setLayoutProperty('pi-border', 'visibility', 'visible');
         } else if (id === 'maiores2011') {
-            flyToPosition([-40.491477, -22.673179], 5); // Ajuste a posição e o zoom conforme necessário
+            map.easeTo({
+                center: [-40.491477, -22.673179],
+                zoom: 5,
+                bearing: 0,
+                pitch: 30,
+                duration: 2000
+            });
             map.setLayoutProperty('ma-border', 'visibility', 'none');
             map.setLayoutProperty('pi-border', 'visibility', 'none');
             map.setLayoutProperty('brasil-border', 'visibility', 'visible');
@@ -248,7 +266,13 @@ document.querySelectorAll('.section').forEach(section => {
             });
             toggleAllStateBorders(true);
         } else if (id === 'menores2011') {
-            flyToPosition([-55.491477, -5.673179], 4.8); // Adjust position and zoom as needed
+            map.easeTo({
+                center: [-55.491477, -5.673179],
+                zoom: 4.8,
+                bearing: 0,
+                pitch: 30,
+                duration: 2000
+            });
             toggleAllStateBorders(true); // Show borders for all states
             estadosMenoresAcessos2011.forEach(estado => {
                 map.setLayoutProperty(`${estado.id}-fill`, 'visibility', 'visible');

@@ -42,6 +42,7 @@ body {
     justify-content: left;
     height: 100vh;
     padding: 20px;
+    /* Distancia pra cima, diminuir */
 }
 
 .main-card {
@@ -51,6 +52,7 @@ body {
     border-radius: 100px;
     max-width: 100%;
     text-align: left;
+    padding-top: 0;
 }
 .main-card h2 {
     margin-bottom: 30px;
