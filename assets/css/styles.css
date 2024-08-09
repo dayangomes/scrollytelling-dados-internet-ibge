@@ -33,7 +33,7 @@ body {
 }
 
 .main-content {
-    background-image: url('assets/img/main-bg.svg');
+    background-image: url('/assets/img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: white;
