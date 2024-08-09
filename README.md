@@ -68,3 +68,7 @@ Este projeto está licenciado sob a licença [MIT](https://choosealicense.com/li
 
 ## Agradecimentos
 Agradeço ao professor  Alexandre Ribeiro Cajazeira Ramos da matéria de Tópicos Especiais em Computação 2024.1 pela orientação e suporte durante o desenvolvimento deste projeto e ao decorrer de todas a matéria.
+
+## Documentação
+
+MapBox [Documentação](https://docs.mapbox.com/help/getting-started/).
