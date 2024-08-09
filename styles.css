@@ -33,7 +33,7 @@ body {
 }
 
 .main-content {
-    background-image: url('/assets/img/main-bg.svg');
+    background-image: url('assets/img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: white;
@@ -42,7 +42,6 @@ body {
     justify-content: left;
     height: 100vh;
     padding: 20px;
-    /* Distancia pra cima, diminuir */
 }
 
 .main-card {
