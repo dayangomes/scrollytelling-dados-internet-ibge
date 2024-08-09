@@ -1,8 +1,10 @@
 # Porcentagem de Acesso à Internet no Brasil (2005-2011)
 
-<a href="https://dayangomes.github.io/scrollytelling-dados-internet-ibge/">
-  <img alt="Página Web Acesso à Internet" src="assets/gif/gif_pagina.mp4">
-</a>
+<div align="center">
+  <a href="https://dayangomes.github.io/scrollytelling-dados-internet-ibge/">
+    <img alt="Página Web Acesso à Internet" src="assets/gif/gif_pagina.gif" style="border-radius: 500px;">
+  </a>
+</div>
 
 ## Visão Geral
 
@@ -23,14 +25,19 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório**:
    ```sh
-   git clone https://github.com/dayangomes/percentage-of-internet-access.git
-   cd percentage-of-internet-access
+   git clone https://github.com/dayangomes/percentage-of-internet-access.git](https://github.com/dayangomes/scrollytelling-dados-internet-ibge.git)
+   cd scrollytelling-dados-internet-ibge
 
-2. **Clone o repositório**:
+2. **Abra o projeto**:
 
+Abra o arquivo `index.html` no seu navegador preferido para visualizar o site localmente.
+
+## GeoJSON Files (Brasil e Estados do brasil)
+
+Caso você precise apenas dos arquivos GeoJSON do Brasil ou dos seus estados, eles foram utilizados no projeto e estão disponíveis para download [aqui](https://github.com/dayangomes/scrollytelling-dados-internet-ibge/tree/main/geojson).
 
 ## Hospedagem
-O projeto está hospedado no GitHub Pages. Se quiser ver a versão ao vivo, [clique aqui.](https://dayangomes.github.io/scrollytelling-dados-internet-ibge/)
+O projeto está hospedado no GitHub Pages. Se quiser ver a versão ao vivo, [clique aqui.](https://dayangomes.github.io/scrollytelling-dados-internet-ibge/).
 
 ## Tecnologias Utilizadas
 
@@ -42,7 +49,7 @@ O projeto está hospedado no GitHub Pages. Se quiser ver a versão ao vivo, [cli
 
 ## Como Contribuir
 
-1. Fork o repositório
+1. `Fork` o repositório
 2. Crie uma branch para sua feature: 
     ```sh
     git checkout -b minha-nova-feature
@@ -53,7 +60,7 @@ O projeto está hospedado no GitHub Pages. Se quiser ver a versão ao vivo, [cli
 4. Push para a branch: 
     ```sh
     git push origin minha-nova-feature
-5. Crie um novo Pull Request
+5. Crie um novo `Pull Request`
 
 ## Licença
 
