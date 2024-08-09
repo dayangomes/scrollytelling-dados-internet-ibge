@@ -1,8 +1,8 @@
 # Porcentagem de Acesso à Internet no Brasil (2005-2011)
 
-![Banner do Projeto](https://github.com/dayangomes/percentage-of-internet-access/blob/main/banner.png) 
-
-> **Nota:** Substitua o URL acima com a URL do seu banner hospedado no GitHub.
+<a href="https://dayangomes.github.io/scrollytelling-dados-internet-ibge/">
+  <img alt="Página Web Acesso à Internet" src="assets/gif/gif_pagina.mp4">
+</a>
 
 ## Visão Geral
 
