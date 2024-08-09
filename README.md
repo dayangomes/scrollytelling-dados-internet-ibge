@@ -1,8 +1,8 @@
 # Porcentagem de Acesso à Internet no Brasil (2005-2011)
 
 <div align="center">
-  <a href="https://dayangomes.github.io/scrollytelling-dados-internet-ibge/">
-    <img alt="Página Web Acesso à Internet" src="assets/gif/gif_pagina.gif" style="border-radius: 500px;">
+  <a href="https://dayangomes.github.io/scrollytelling-dados-internet-ibge/" target="_blank">
+    <img alt="Página Web Acesso à Internet"  src="assets/gif/gif_pagina.gif" style="border-radius: 500px;">
   </a>
 </div>
 
